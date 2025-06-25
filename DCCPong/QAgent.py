@@ -36,7 +36,7 @@ class Agent:
         state.append(velocity)
 
         # Obtenemos el cuadrante de la pelota
-        proximity = 5 - int(round(game.ball.x / game.MAX_X) * 5)
+        proximity = 5 - int(round((game.ball.x / game.MAX_X) * 5))
         state.append(proximity)
 
         # Revisamos la posición de la pelota respecto al extremo superior del agente  
